@@ -8,17 +8,49 @@
   <title>Document</title>
 </head>
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   h1 {
     background: rgb(103, 131, 225)
   }
 </style>
 <h1>Tom Bawel</h1>
-<h2>516 Valley Drive Bozeman, MT 59718 425-273-0084 <tbawel@gmail class="com"></tbawel@gmail>
+<h2>516 Valley Drive Bozeman, MT 59718 425-273-0084 tbawel@gmail.com
 </h2>
 
 <body>
-  <p>start of the universe</p>
-  <p>here we go again..</p>
+  <h1>Qualification Summary</h1>
+  <p>Motivated, self-learner eager to gain experience and be instrumental in the growth of the comnpany.
+  </p>
+  <h2>Two Equal Columns</h2>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>Column 1</h2>
+      <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Column 2</h2>
+      <p>Some text..</p>
+    </div>
+  </div>
+
 </body>
 
 </html>
